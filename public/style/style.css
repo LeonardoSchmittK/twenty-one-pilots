@@ -1,4 +1,32 @@
 .title {
     font-family: 'Dhurjati', sans-serif;
+
+}
+
+body {
+    background-color: var(--black);
     
+}
+
+
+header nav, header ul{
+    display: flex;
+}
+
+header {
+    display: flex;
+}
+header ul {
+    align-items:center;
+    padding-bottom: 0.75rem;
+}
+
+nav svg {
+    border-right: 1px solid grey;
+}
+
+nav a {
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
