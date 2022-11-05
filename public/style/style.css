@@ -22,10 +22,10 @@ header {
 
 }
 
-header:hover {
+.header:hover {
     background-color: #0000003e;
-
 }
+
 header ul {
     align-items:center;
     padding-bottom: 0.75rem;
@@ -60,6 +60,7 @@ nav a {
     top: 0;
     z-index: -9;
     opacity: 0.7;
+    filter: grayscale(100);
 }
 
 .bgBlack {
@@ -87,6 +88,8 @@ nav a {
 }
 
 
+
+
 .logoCenterContainer {
     display: flex;
     justify-content: center;
@@ -95,9 +98,236 @@ nav a {
     height: 65vh;
     animation: logoBump 2s ease forwards;
     mix-blend-mode:color-dodge;
+    filter: grayscale(1%);  
+    /* mutavel  */
     
 }
 
+.swiper {
+    width: 100%;
+    height: 500px;
+    margin-bottom: -90px;
+    
+  }
+
+  .swiper-slide {
+    width: 400px;
+    height: 400px;
+    transition: 200 linear;
+    transform: scale(0.8);
+
+  }
+  
+
+
+  .swiper-slide-active{
+    transform: scale(1);
+
+  }
+
+  .section__title {
+    font-family: Dhurjati, sans-serif;
+    font-size: 6em;
+    margin-top: -40px;
+    padding:0 2rem;
+    position: relative;
+    border-bottom: 3px solid var(--yellow-opacity-low);
+    height: 130px;
+}
+
+.section__title.footer {
+    font-size: 3em;
+    margin-top: 0;
+    height: 80px;
+
+}
+
+.section__title.footer::before {
+    content: url(../src/img/Rectangle\ 13.png);
+    border-radius: 100%;
+    position: absolute;
+    bottom:20px;
+    left:10px;
+  }
+
+  .section__bg-title {
+    position: absolute;
+    font-size: 20em;
+    top: -100px;
+    left: 0;
+    font-family: Dhurjati, sans-serif;
+    opacity: 0.02;
+    pointer-events: none;
+  }
+
+  .section__title::before {
+    content: url(../src/img/Rectangle\ 13.png);
+    border-radius: 100%;
+    position: absolute;
+    bottom:5px;
+    left:10px;
+  }
+
+  .black {
+    height: 10rem;
+    background-color: var(--black);
+  }
+
+.section__container {
+    background-color: var(--black);
+    position: relative;
+    padding-bottom: 2em;
+}
+
+
+.shows__cells {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin:1em auto;
+    gap: 1em;
+    margin-bottom: 4em;
+    background: url(../src/img/bg-top-bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.show__cell {
+    margin: auto;
+    display: flex;
+    width: 60%;
+    flex: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--black-darker-lower);
+    padding: 1.6em;
+    border-radius: 4px;
+    position: relative;
+    transition: 100ms linear;
+}
+
+.show__cell:nth-child(1)::before{
+    content: "NEXT";
+    background-color: var(--yellow);
+    position: absolute;
+    top:-10px;
+    color:var(--black-darker-lower);
+    padding:0.3em 1em;
+    border-radius: 2px;
+
+
+}
+
+.show__cell span{
+    opacity: 0.5;
+}
+
+.show__cell:hover {
+    transform: scale(1.01);
+    background:linear-gradient(20deg, var(--black-darker) 50%,var(--black));
+    transition: 100ms linear;
+    
+}
+
+
+.show__cell__itemContainer {
+    display: flex;
+    width: 50%;
+    align-self: center;
+    gap: 2em;
+    
+}
+
+
+
+.getticket__button{
+    background-color: var(--yellow);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color:var( --black-opacity-low);
+    padding:0.5rem 2rem;
+    font-family: Dhurjati, sans-serif;
+    border-radius: 2px;
+    font-weight: 700;
+    cursor: pointer;  
+} 
+
+.getticket__button:hover {
+        background-color: yellow;
+
+}
+
+footer {
+    background-color: var(--black-darker-lower);
+    padding: 1.3em;
+}
+
+
+
+.footer__media {
+    display: flex;
+    margin-top: -1.4em;
+}
+
+
+.media-cont {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    gap:0.5em;
+}
+
+.mediaContainerr.footer div {
+    padding: 0.3rem;
+}
+
+.email-container {
+    width: 25%;
+    display: flex;
+    padding: 1em;
+}
+
+.email-container input[type=submit] {
+    margin-left: 20px;
+    font-size: 1.3em;
+    padding: 0.2em 2em;
+    align-self: flex-end;
+    
+}
+
+.email-input-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.email-input-container label {
+    opacity: 0.5;
+    padding: 0.3em;
+}
+
+.email-container input[type=email]{
+    background-color: var(--black-darker-even-lower);
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+.footer__header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.footer__header .mediaContainer {
+    margin: 0;
+    align-self: center;
+    margin-top: -15px;
+    margin-left: -30px;
+}
 
 @keyframes logoBump {
     from {

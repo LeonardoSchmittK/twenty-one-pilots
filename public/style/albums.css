@@ -1,0 +1,52 @@
+.albums__cells {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5em 0;
+    gap: 10em;
+    flex-wrap: wrap;
+}
+.album__cell {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5em var(--black-darker);
+    position: relative;
+    cursor: pointer;
+}
+
+.album__cell:hover {
+    animation: rotateDisco 5000ms linear infinite;
+    box-shadow: 5px 5px 15em var(--black-darker);
+
+}
+
+.album__cell:hover .album__info {
+    visibility: visible;
+
+}
+
+
+
+.album__info {
+    position: absolute;
+    visibility: hidden;
+    font-size: 2em;
+    left:30%;
+
+}
+
+.album__title {
+    background-color: var(--white);
+    color:var(--black-darker);
+    padding: 0.5em;
+    font-family: Dhurjati;
+}
+
+@keyframes rotateDisco {
+    to {
+        transform: rotate(360deg);
+    }
+}

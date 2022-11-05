@@ -9,8 +9,7 @@
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
-
+    overflow-x:hidden;
 }
 
 a {
@@ -21,4 +20,17 @@ ul {
     list-style: none;
 }
 
+button,input {
+    outline: 0;
+    border: 0;
+    
+}
 
+input::placeholder{
+    opacity: 0.1;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}

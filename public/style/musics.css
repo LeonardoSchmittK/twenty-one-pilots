@@ -1,0 +1,12 @@
+.spotify-music-button {
+    background-color: var(--yellow);
+    width: 100%;
+    padding: 0.2em 0.6em;
+    border-radius: 0.1em;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.spotify-music-button i {
+    color: var(--black-opacity-low);
+}

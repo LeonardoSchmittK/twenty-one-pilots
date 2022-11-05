@@ -1,0 +1,132 @@
+@media only screen and (max-width: 600px) {
+    .header {
+        padding: 0.2em;
+        z-index: 9999;
+    }
+
+    .logo {
+    }
+
+    .header nav a{
+        width: 100%;
+        padding: 0.4em;
+        font-size: 1.3em;
+    }
+
+   .header .mediaContainer {
+        position: fixed;
+        right:-0.3em;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 0.4em;
+        border-radius: 0.1em;
+        width: auto;
+        height: auto;
+        bottom: 50%;
+        z-index: 9999;
+    }
+
+    .header .mediaContainer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black-darker-lower);
+        padding: 0.3em;
+        border-radius: 0.2em;
+        width: 100%;
+        margin: 0.2em auto;
+        height: 1.5em;
+    }
+
+    .header i {
+        font-size: 0.7em;
+    }
+
+    .bgBlack {
+    background-image: url("../src/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    mix-blend-mode: darken;
+    opacity: .5;
+    animation: mixBlend 1s infinite ;
+    }
+
+    .bgVideo {
+        width: 120%;
+        pointer-events: none;
+        position: fixed;
+        top: 0em;
+        padding: 0;
+        z-index: -9;
+        opacity: 0.7;
+    }
+
+    .logoCenterContainer {
+    margin: auto;
+    width: 35%;
+    height: 25vh;
+    animation: logoBump 2s ease forwards;
+    mix-blend-mode:color-dodge;
+    z-index: -9;
+
+    }
+
+    .swiper {
+        height: 200px;
+
+    }
+    .section__title  {
+        font-size: 4em;
+    height: 90px;
+
+    }
+    .shows__cells {
+        width: 97%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .show__cell {
+        padding: 0.7em;
+        width: 100%;
+    }
+
+    .show__cell__itemContainer {
+        font-size: 0.9em;
+        padding: 0;
+        width: 60%;
+    }
+    .getticket__button {
+    padding:0.1rem 0.8rem;
+
+    }
+
+
+    .section__title.footer {
+        font-size: 2.3em;
+        height: 1.5em;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    footer .mediaContainer {
+        width: 45%;
+    }
+
+    footer .email-container {
+        width: 100%;
+    }
+
+    footer .email-container input[type=email]{
+        width: 100%;
+        font-size: 1em;
+    }
+    footer .email-container input[type=submit]{
+        font-size: 1em;
+    }
+  }
