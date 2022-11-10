@@ -2,5 +2,22 @@
   "dependencies": {
     "firebase": "^9.13.0",
     "swiper": "^8.4.4"
-  }
+  },
+  "name": "twenty-one-pilots",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoSchmittK/twenty-one-pilots.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardoSchmittK/twenty-one-pilots/issues"
+  },
+  "homepage": "https://github.com/LeonardoSchmittK/twenty-one-pilots#readme",
+  "description": ""
 }
