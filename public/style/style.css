@@ -120,6 +120,7 @@ nav a {
   
 
 
+
   .swiper-slide-active{
     transform: scale(1);
 
@@ -191,6 +192,11 @@ nav a {
     background: url(../src/img/bg-top-bottom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.show__cell:hover {
+    box-shadow: 5px 5px 5em var(--black-darker);
+
 }
 
 .show__cell {
